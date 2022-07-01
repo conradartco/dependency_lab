@@ -6,8 +6,8 @@ public class Bear implements Attacker{
     public int attackPower;
 
     public Bear(String name, int attackPower) {
-        this.name = "Jeremy";
-        this.attackPower = 45;
+        this.name = name;
+        this.attackPower = attackPower;
     }
 
     @Override

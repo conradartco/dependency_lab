@@ -1,13 +1,13 @@
 package org.example;
 
-public class Robot {
+public class Robot implements Attacker{
 
     //Instance variables (HAS A)
-    public String name;
+    public Name name;
     public Weapon weapon;
 
-    public Robot(Weapon weapon) {
-        this.name = "Roswell";
+    public Robot(Name name, Weapon weapon) {
+        this.name = name;
         this.weapon = weapon;
     }
 

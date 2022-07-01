@@ -2,13 +2,17 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
 
-        //Weapon sword = new Weapon("Sword", 50);
-        Weapon club = new Weapon("Club", 25);
-        Robot robot_one = new Robot(club);
-        System.out.println(robot_one.name);
+        Maul maul = new Maul();
+        Crossbow crossbow = new Crossbow();
+        Staff staff = new Staff();
+        Bartha bartha = new Bartha();
+        Robot robot_one = new Robot(bartha, maul);
+        Robot robot_two = new Robot(bartha, crossbow);
+        Robot robot_three = new Robot(bartha, staff);
         robot_one.Attack();
+        robot_two.Attack();
+        robot_three.Attack();
 
 
 
